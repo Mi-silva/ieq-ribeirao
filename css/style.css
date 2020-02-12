@@ -1,0 +1,276 @@
+/* ------------Formatações gerais-------------*/
+
+body, html {
+			margin: 0;
+			font: 16px "Lato", sans-serif;
+			color: #777;
+			height: 100%;
+}
+
+a:link, a:active, a:visited {
+	text-decoration: none;
+}
+
+a:hover {
+	color: #B40404;
+}
+
+.divisor-gradiente {
+	clear: both;
+	background: linear-gradient(to right, red, yellow, blue, purple);
+	width: 100%;
+	height: 3px;
+}
+
+/* ------------Formatação da caixas de imagem-------------*/
+.caixa1, .caixa2, .caixa3, .caixa4 {
+			position: relative;
+			height: 100%;
+			background-repeat: no-repeat;
+			background-size: cover;
+			background-position: bottom;
+			background-attachment: fixed; 
+}
+
+.caixa1 {
+	background-image: url(../img/fundo-topo.jpg);
+	opacity: 0.8;
+}
+
+.caixa2 {
+	background-image: url(../img/igreja.jpg);
+}
+
+
+.caixa3 {
+	background-image: url(../img/grupos.jpg);
+}
+
+
+/* ------------Formatação cabeçalho-------------*/
+
+header {
+	padding: 15px;
+	display: block;
+	float: left;
+	width: 100%;
+	height: 70px;
+}
+
+
+#cabecalho {
+	position: absolute;
+	left: 0;
+	width: 100%;
+}
+
+#logo {
+	float: left;
+	margin-left: 100px;
+	width: 150px;
+	height: 100px;
+}
+
+#logo h1 {
+	text-indent: -9999px;
+}
+
+#logo img {
+	width: 150px;
+	height: 100px;
+}
+
+nav ul {
+	float: right;
+	list-style: none;
+	padding-right: 30px;
+	color: #fff;
+}
+
+nav ul li {
+	float: left;
+	margin: 3px;
+}
+
+nav ul li a{
+	color: #ccc;
+	font-weight: bolder;
+	text-decoration: none;
+	padding: 12px;
+}
+
+nav ul li:hover{
+	-webkit-border-radius: 7px;
+	-moz-border-radius: 7px;
+	border-radius: 7px;
+	border-bottom: 3px solid #00008B;
+	border-top: 3px solid #FFD700;
+	opacity: 0.9;
+	margin: 5px;
+	padding: 7px;
+	transition: 0.2s;
+	font-color: #fff;
+}
+
+nav ul li a:hover {
+	color: #8B0000;
+}
+/* ------------Formatação titulo caixas-------------*/
+
+.titulo-caixa {
+	position: absolute;
+	left: 0;
+	top: 45%;
+	width: 100%;
+	text-align: center;
+}
+
+.titulo-caixa span {
+	color: #ccc;
+	padding: 18px;
+	font-size: 18px;
+	font-weight: bolder;
+	letter-spacing: 6px;
+	text-transform: uppercase;
+}
+.titulo-caixa span.titulo {
+	font-size: 70px;
+}
+
+
+/* ------------Formatação ícones redes sociais-------------*/
+
+span.redes-sociais{
+	opacity: 0.8;
+	padding-bottom: 5px;
+	position: relative;
+	top: 100px;
+}
+
+span.redes-sociais img{
+	background: #fff;
+	opacity: 0.7;
+	-webkit-border-radius: 25px;
+	-moz-border-radius: 25px;
+	border-radius: 25px;
+}
+
+span.redes-sociais img:hover{
+	background: #fff;
+	opacity: 1;
+}
+
+/* ------------Formatação conteúdo ------------*/
+
+.conteudo1 {
+	background: #fff;
+	color: #000;
+	padding: 20px;
+}
+
+.conteudo1 h2,
+.conteudo2 h2 {
+	color: #5858FA;
+	font-size: 40px;
+	font-weight: bolder;
+	padding: 0px 10px ;
+	text-align: center;
+	margin-bottom: 0;
+}
+
+.conteudo1 h3 {
+	color: #424242;
+	font: "Lucida Sans Unicode";
+	font-size: 30px;
+	padding: 5px 10px;
+	text-align: center;
+	margin: 0;
+}
+
+.conteudo1 p, 
+.conteudo2 p{
+	color: #2E2E2E;
+	font-size: 15px;
+	padding: 10px;
+	text-align: center;
+	letter-spacing: 2px;
+}
+
+.conteudo1 a, 
+.conteudo2 a{
+	float: right;
+	color: #610B0B;
+	margin: 0px 310px 30px 0;
+}
+
+.conteudo1 a:hover, 
+.conteudo2 a:hover {
+	text-decoration: underline;
+	color: #DF0101;
+}
+
+.conteudo1 #pastores,
+.conteudo1 #gp-missionarios  {
+	height: 350px;
+	display: flex;
+	flex-wrap: wrap;
+	text-align: center;
+}
+
+.conteudo1 #pastores img,
+.conteudo1 #gp-missionarios img {
+	width: 184px;
+	height: 166px;
+	border: 3px solid #ccc;
+}
+
+.conteudo1 #pastores .foto-conteudo {
+	width: 50%;
+	height: 166px;
+	margin: 0 auto;
+}
+
+.conteudo1 #gp-missionarios .foto-conteudo1 {
+	width: 33%;
+	height: 166px;
+	margin: 0 auto;
+}
+
+.conteudo1 #gp-missionarios .foto-conteudo2 {
+	height: 166px;
+	margin: 20px auto;
+}
+
+.conteudo1 #pastores span {
+	width: 50%;
+	margin: 10px auto;
+}
+
+.conteudo1 #pastores h2 {
+	width: 100%;
+	padding-bottom: 40px;
+}
+
+.conteudo2 {
+	background: #E6E6E6;
+	color: #000;
+	padding: 20px;
+	text-align: center;
+	float: left;
+}
+
+.conteudo2 #mapa {
+	float: left;
+	width: 50%;
+}
+
+.conteudo2 #mapa h2{
+	padding: 20px;
+}
+
+.conteudo2 #contato {
+	float: right;
+	width: 50%;
+	margin-top: 100px;
+}
+
